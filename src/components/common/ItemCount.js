@@ -21,7 +21,11 @@ const ItemCount  = ({stock, initial}) => {
      }
 
      const addToCart = () => {
+          if ( value === 0 ){
+               alert('No podes agregar '+ value )
+          } else {
           alert('Agregado ' + value + ' al carrito ')
+          }
      }
 
      return (
