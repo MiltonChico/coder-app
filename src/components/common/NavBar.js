@@ -1,19 +1,17 @@
 import React from 'react'
 
-import CartWidget from '../widgets/CartWidget'
-
 import { Nav, Navbar, Form, Button,FormControl  } from "react-bootstrap"
 
 const NavBar = () => {
      return (
           <>
           <Navbar bg="light" variant="light">
-               <Navbar.Brand href="#home">CODE-AR</Navbar.Brand>
+               <Navbar.Brand href="/">CODE-AR</Navbar.Brand>
                     <Nav className="mr-auto">
-                         <Nav.Link href="#home">Home</Nav.Link>
-                         <Nav.Link href="#features">Features</Nav.Link>
-                         <Nav.Link href="#pricing">Pricing</Nav.Link>
-                         <Nav.Link href="#pricing">Shop <CartWidget /></Nav.Link>
+                         <Nav.Link href="/">Home</Nav.Link>
+                         <Nav.Link href="/shop">Shop </Nav.Link>
+                         <Nav.Link href="/features">Features</Nav.Link>
+                         <Nav.Link href="/contact">Contact</Nav.Link>
                     </Nav>
                     <Form inline>
                          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
