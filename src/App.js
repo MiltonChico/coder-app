@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import NavBar from './components/common/NavBar'
-import ItemListContainer from './components/container/ItemListContainer';
+
 
 import Contact from './pages/Contact'
 import Shop from './pages/Shop'
 import Features from './pages/Features'
+import ItemDetailContainer from './components/container/ItemDetailContainer';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <BrowserRouter >
       <NavBar />
         <Switch > 
-            <Route exact path="/" component={ItemListContainer} />
+            <Route exact path="/" component={ItemDetailContainer} />
             <Route path="/contact" component={Contact} />
             <Route path="/shop" component={Shop} />
             <Route path="/features" component={Features} />
