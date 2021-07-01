@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-import ItemList from '../common/ItemList'
+import CardItem from '../common/CardItem'
 
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
+
+     const [ item , setItem ] = useState()
+
+     useEffect(() => {      
+          function fetchData(){
+               fetch("https://mocki.io/v1/b87f427a-40b3-48d3-b5ea-26051137f98c")
+                    .then((response) => response.json())
+                    .then((data) => {
+                         setItem(data)
+                    })      
+          }
+          fetchData() 
+     },[])
+
      return (
           <>
-               <h1>{props.greeting}</h1>
-               <ItemList />
+               <CardItem data={item}/>
           </>
      )
 }
