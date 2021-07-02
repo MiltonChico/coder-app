@@ -9,9 +9,9 @@ const NavBar = () => {
                <Navbar.Brand href="/">CODE-AR</Navbar.Brand>
                     <Nav className="mr-auto">
                          <Nav.Link href="/">Home</Nav.Link>
-                         <Nav.Link href="/shop">Shop </Nav.Link>
-                         <Nav.Link href="/features">Features</Nav.Link>
-                         <Nav.Link href="/contact">Contact</Nav.Link>
+                         <Nav.Link href="/buzos">Buzos </Nav.Link>
+                         <Nav.Link href="/pantalones">Pantalones</Nav.Link>
+                         <Nav.Link href="/remeras">Remeras</Nav.Link>
                     </Nav>
                     <Form inline>
                          <FormControl type="text" placeholder="Search" className="mr-sm-2" />

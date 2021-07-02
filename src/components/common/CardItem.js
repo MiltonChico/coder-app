@@ -21,7 +21,7 @@ const CardItem = ({ data }) => {
                               <Card.Body>
                                    <Card.Title>{item.title}</Card.Title>
                                    <Card.Text>{item.price} $</Card.Text>
-                              <NavLink to={`/product/${item.id}`} data={data}>Go Detail</NavLink>
+                                   <NavLink to={`/product/${item.id}`} data={data}>Go Detail</NavLink>
                               </Card.Body>
                          </Card>
                     </Col>
